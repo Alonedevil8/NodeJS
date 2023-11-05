@@ -1,0 +1,26 @@
+header.bg-indigo-600.p-4
+    .container.mx-auto.flex.justify-between.items-center
+        h1.text-2xl.text-white.font-extrabold.text-center
+            a(href='http://localhost:3001/') Bienes
+            span.font-normal
+                a(href='http://localhost:3001/') Raices
+        
+        nav(class="my-5 text-sm md:flex md:items-center md:gap-5 font-bold text-white hidden")
+            a(href="/auth/registro") Crear Cuenta
+            a(href="/auth/login" class="bg-indigo-900 py-2 px-10 rounded-lg") Iniciar Sesion
+
+div(class="bg-indigo-700 py-4 lg-block")
+    div(class="container mx-auto flex justify-between items-center")
+        nav(class="flex gap-4 items-center") 
+            a(href="/categorias/1" class="text-xs font-bold uppercase text-white") Viviendas
+            a(href="/categorias/2" class="text-xs font-bold uppercase text-white") Apartamentos
+            a(href="/categorias/3" class="text-xs font-bold uppercase text-white") Condominios
+            a(href="/categorias/4" class="text-xs font-bold uppercase text-white") Casas
+            a(href="/categorias/4" class="text-xs font-bold uppercase text-white") Inmuebles    
+        
+        form(action="/buscador" method="POST" class="flex gap-4 items-center")
+            input(type="hidden" name="_csrf" value= csrfToken)
+            label(for="termino" class="text-sm uppercase font-bold text-white") Busqueda
+            input(type="text" id="termino" name="termino" placeholder="Buscar Propiedades" class="p-2 rounded-lg shadow text-sm")
+
+            input(type="submit" class="bd-indigo-800 hover:bg-indigo rounded-lg-400 text-white uppercase font-bold p-2 cursor-pointer text-sm" value=">")
