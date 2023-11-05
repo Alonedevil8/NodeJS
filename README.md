@@ -1,6 +1,6 @@
 # Microservicios Tutoriales - Aplicación de Compra y Venta de Bienes Raíces
 
-![Microservicios Tutoriales Logo](logo.png)
+![Microservicios Tutoriales Logo]
 
 Este repositorio contiene una aplicación de compra y venta de bienes raíces construida con microservicios. Aquí encontrarás información sobre la configuración del proyecto y cómo ejecutarlo. ¡Comencemos!
 
